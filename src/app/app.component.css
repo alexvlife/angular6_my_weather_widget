@@ -1,0 +1,172 @@
+h1 {
+	margin: 3em 0em 2em 0em;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+	color: #fff;
+}
+
+.copy-right {
+	padding: 0em 0em 2em 0em;
+  text-align: center;
+}
+
+.copy-right p {
+	line-height: 1.6em;
+  font-size: 1em;
+  color: #fff;
+}
+
+.copy-right p a {
+	color: #fd7b87;
+}
+
+.copy-right p a:hover {
+	text-decoration: none;
+  color: #fff;  
+}
+
+.element {
+  width: 40%;
+  margin: 0 auto 7em;
+}
+
+.element-left {
+	width: 50%;
+  float: left;
+}
+
+.element-right {
+	width: 35%;
+  float: right;
+}
+
+.element-bg-img img {
+  border-radius: 6px 6px 0px 0px;
+}
+
+.ele-strip {
+	margin: -3px 0px 0px 0px;
+	padding: 1em 1em;
+  background-color: #fda660;
+}
+
+.ele-strip ul {
+  text-align: center;
+}
+
+.ele-strip ul li {
+  display: inline-block;
+  padding: 0em 0.5em;
+  border-right: 1px solid #fff;
+}
+
+.ele-strip ul li a {
+  font-size: 1em;
+  color: #fff;
+}
+
+ul li.anc-bor {
+	border-right: none;
+}
+
+/*--village start here--*/
+
+.village {
+  padding: 1.5em 1em;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #fff;
+}
+
+.village h3 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+  font-size: 0.95em;
+  font-weight: bold;
+	color: #000;
+}
+
+span.line {
+  display: block;
+  width: 103px;
+  height: 2px;
+	margin: 0.6em auto 0em;
+	background: url(../assets/images/line.png) no-repeat;
+}
+
+.activity_box {
+	min-height: 120px;
+	background-color: #fff;
+}
+
+.scrollbar {
+	height: 115px;
+	padding: 1em 1em 0em 1em;
+	overflow-y: scroll;
+	background-color: #fff;       
+}
+
+#style-2::-webkit-scrollbar-track {
+	background-color: #f0f0f0;
+}
+
+#style-2::-webkit-scrollbar {
+	width: 5px;
+	background-color: #f5f5f5;
+}
+
+#style-2::-webkit-scrollbar-thumb {	
+	background-color: #fda660;
+}
+
+.activity-row {
+	margin-bottom: 1em;
+	text-align: left;
+}
+
+.activity-desc {
+	width: 50%;
+	float: left;
+}
+
+.activity-desc h5 {
+	margin-bottom: 5px;
+	font-size: 1em;
+	font-weight: 500;
+	color: #000;
+}
+
+.activity-desc h5 a {
+	color: #000;
+}
+
+.activity-desc p {
+	line-height: 1.7em;
+	font-size: 0.94em;
+	color: #999;
+}
+
+.activity-desc h6 {
+	margin: 13px 0 0 0;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fd7b87;
+}
+
+.activity-img {
+	width: 50%;
+	float: right;
+  text-align: center;
+}
+
+.activity-img img {
+  display: inline-block;
+}
+
+.activity-img ul li {
+  display: inline-block;
+}
+
+.activity-img ul li img {
+  border-radius: 50px;
+}

@@ -1,0 +1,34 @@
+.temperatur {
+	margin-bottom: 2.5em;
+	padding: 1em 1em;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #5fb3f9;
+}
+
+.temperatur h5 {
+	font-size: 1em;
+	color: #fff;
+}
+
+.temperatur h2 {
+	display: inline-block;
+  vertical-align: top;	
+	font-family: 'Roboto', sans-serif;
+  font-size: 3.2em;
+	color: #fff;
+}
+
+.temperatur h6 {
+	margin: 1em 0em 0em 0em;
+  font-size: 1em;
+  color: #fff;
+}
+
+span.cloud {
+	display: inline-block;
+  width: 50px;
+  height: 50px;
+	background: url(../../../assets/images/cloudy.png) no-repeat;
+}
+
