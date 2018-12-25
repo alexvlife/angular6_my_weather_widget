@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "types": ["MOUNTAINS", "TOUR"],
+    "image": "hotel1_img1.png",
+    "adress": "Hotel place 1, City name, Country name",
+    "phone": "1234567890",
+    "weatherInfo": {
+      "type": "SUNNY",
+      "airTemperature": 35,
+      "waterTemperature": 30,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 1",
+      "image": "hotel1_img2.png",
+      "followers": 9888,
+      "following": 1976
+    }
+  },
+  {
+    "id": 2,
+    "types": ["MOUNTAINS"],
+    "image": "hotel2_img1.png",
+    "adress": "Hotel place 2, City name, Country name",
+    "phone": "2345678901",
+    "weatherInfo": {
+      "type": "SUNNY",
+      "airTemperature": 30,
+      "waterTemperature": 25,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 2",
+      "image": "hotel2_img2.png",
+      "followers": 8100,
+      "following": 876
+    }
+  },
+  {
+    "id": 3,
+    "types": ["MOUNTAINS"],
+    "image": "hotel3_img1.png",
+    "adress": "Hotel place 3, City name, Country name",
+    "phone": "3456789012",
+    "weatherInfo": {
+      "type": "SUNNY",
+      "airTemperature": 28,
+      "waterTemperature": 24,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 3",
+      "image": "hotel3_img2.png",
+      "followers": 7175,
+      "following": 535
+    }
+  },
+  {
+    "id": 4,
+    "types": ["SEA", "FISHING"],
+    "image": "hotel4_img1.png",
+    "adress": "Hotel place 4, City name, Country name",
+    "phone": "4567890123",
+    "weatherInfo": {
+      "type": "RAINY",
+      "airTemperature": 25,
+      "waterTemperature": 19,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 4",
+      "image": "hotel4_img2.png",
+      "followers": 6755,
+      "following": 935
+    }
+  },
+  {
+    "id": 5,
+    "types": ["SEA", "TOUR"],
+    "image": "hotel5_img1.png",
+    "adress": "Hotel place 5, City name, Country name",
+    "phone": "5678901234",
+    "weatherInfo": {
+      "type": "RAINY",
+      "airTemperature": 23,
+      "waterTemperature": 14,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 5",
+      "image": "hotel5_img2.png",
+      "followers": 5481,
+      "following": 759
+    }
+  },
+  {
+    "id": 6,
+    "types": ["SEA"],
+    "image": "hotel6_img1.png",
+    "adress": "Hotel place 6, City name, Country name",
+    "phone": "6789012345",
+    "weatherInfo": {
+      "type": "RAINY",
+      "airTemperature": 20,
+      "waterTemperature": 12,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 6",
+      "image": "hotel6_img2.png",
+      "followers": 4987,
+      "following": 934
+    }
+  },
+  {
+    "id": 7,
+    "types": ["FISHING"],
+    "image": "hotel7_img1.png",
+    "adress": "Hotel place 7, City name, Country name",
+    "phone": "7890123456",
+    "weatherInfo": {
+      "type": "CLOUDY",
+      "airTemperature": 15,
+      "waterTemperature": 8,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 7",
+      "image": "hotel7_img2.png",
+      "followers": 3143,
+      "following": 790
+    }
+  },
+  {
+    "id": 8,
+    "types": ["FISHING"],
+    "image": "hotel8_img1.png",
+    "adress": "Hotel place 8, City name, Country name",
+    "phone": "8901234567",
+    "weatherInfo": {
+      "type": "CLOUDY",
+      "airTemperature": 14,
+      "waterTemperature": 7,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 8",
+      "image": "hotel8_img2.png",
+      "followers": 2143,
+      "following": 975
+    }
+  },
+  {
+    "id": 9,
+    "types": ["TOUR"],
+    "image": "hotel9_img1.png",
+    "adress": "Hotel place 9, City name, Country name",
+    "phone": "9012345678",
+    "weatherInfo": {
+      "type": "CLOUDY",
+      "airTemperature": 12,
+      "waterTemperature": 5,
+      "icon": "icon"
+    },
+    "socialInfo": {
+      "title": "Hotel 9",
+      "image": "hotel9_img2.png",
+      "followers": 1734,
+      "following": 591
+    }
+  }
+]
