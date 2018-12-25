@@ -3,7 +3,7 @@
     "id": 1,
     "types": ["MOUNTAINS", "TOUR"],
     "image": "hotel1_img1.png",
-    "adress": "Hotel place 1, City name, Country name",
+    "address": "Hotel place 1, City name, Country name",
     "phone": "1234567890",
     "weatherInfo": {
       "type": "SUNNY",
@@ -22,7 +22,7 @@
     "id": 2,
     "types": ["MOUNTAINS"],
     "image": "hotel2_img1.png",
-    "adress": "Hotel place 2, City name, Country name",
+    "address": "Hotel place 2, City name, Country name",
     "phone": "2345678901",
     "weatherInfo": {
       "type": "SUNNY",
@@ -41,7 +41,7 @@
     "id": 3,
     "types": ["MOUNTAINS"],
     "image": "hotel3_img1.png",
-    "adress": "Hotel place 3, City name, Country name",
+    "address": "Hotel place 3, City name, Country name",
     "phone": "3456789012",
     "weatherInfo": {
       "type": "SUNNY",
@@ -60,7 +60,7 @@
     "id": 4,
     "types": ["SEA", "FISHING"],
     "image": "hotel4_img1.png",
-    "adress": "Hotel place 4, City name, Country name",
+    "address": "Hotel place 4, City name, Country name",
     "phone": "4567890123",
     "weatherInfo": {
       "type": "RAINY",
@@ -79,7 +79,7 @@
     "id": 5,
     "types": ["SEA", "TOUR"],
     "image": "hotel5_img1.png",
-    "adress": "Hotel place 5, City name, Country name",
+    "address": "Hotel place 5, City name, Country name",
     "phone": "5678901234",
     "weatherInfo": {
       "type": "RAINY",
@@ -98,7 +98,7 @@
     "id": 6,
     "types": ["SEA"],
     "image": "hotel6_img1.png",
-    "adress": "Hotel place 6, City name, Country name",
+    "address": "Hotel place 6, City name, Country name",
     "phone": "6789012345",
     "weatherInfo": {
       "type": "RAINY",
@@ -117,7 +117,7 @@
     "id": 7,
     "types": ["FISHING"],
     "image": "hotel7_img1.png",
-    "adress": "Hotel place 7, City name, Country name",
+    "address": "Hotel place 7, City name, Country name",
     "phone": "7890123456",
     "weatherInfo": {
       "type": "CLOUDY",
@@ -136,7 +136,7 @@
     "id": 8,
     "types": ["FISHING"],
     "image": "hotel8_img1.png",
-    "adress": "Hotel place 8, City name, Country name",
+    "address": "Hotel place 8, City name, Country name",
     "phone": "8901234567",
     "weatherInfo": {
       "type": "CLOUDY",
@@ -155,7 +155,7 @@
     "id": 9,
     "types": ["TOUR"],
     "image": "hotel9_img1.png",
-    "adress": "Hotel place 9, City name, Country name",
+    "address": "Hotel place 9, City name, Country name",
     "phone": "9012345678",
     "weatherInfo": {
       "type": "CLOUDY",

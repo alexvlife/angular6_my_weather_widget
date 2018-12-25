@@ -6,7 +6,7 @@ export class Hotel {
     public id: number,
     public types: HotelType[],
     public image: string,
-    public adress: string,
+    public address: string,
     public phone: string,
     public weatherInfo: Weather,
     public socialInfo: Social,
