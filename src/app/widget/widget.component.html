@@ -1,0 +1,35 @@
+<section class="widget">
+
+  <header class="widget-banner">
+    <img
+      [src]="hotel.image || '../../../assets/images/no-photo.jpg'"
+      alt="Photo"
+      onerror="this.src = '../../../assets/images/no-photo.jpg'"
+      [title]="hotel.socialInfo.title"
+      width="330"
+      height="195"
+      class="widget-banner__image">
+  </header>
+
+  <nav class="widget-navigation">
+    <ul class="widget-navigation__menu">
+      <li class="widget-navigation__item">All</li>
+      <li class="widget-navigation__item"></li>
+    </ul>
+  </nav>
+
+  <section class="widget-content">
+
+    <header class="widget-content__header-container">
+      <h2 class="widget-content__header-title">Hotels and places for your rest</h2>
+      <div class="line line_widget"></div>
+      <p>filtered by: " ... "</p>
+    </header>
+
+    <ul class="widget-content__list">
+      <li class="widget-content__item"></li>
+    </ul>
+
+  </section>
+
+</section>

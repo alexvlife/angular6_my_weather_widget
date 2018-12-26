@@ -1,0 +1,48 @@
+.widget {
+  width: 330px;
+  height: 485px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.widget-banner {
+  height: 195px;
+}
+
+.widget-banner__image {
+  -webkit-border-top-left-radius: 7px; 
+  -webkit-border-top-right-radius: 7px; 
+}
+
+.widget-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+  background-color: rgb(245, 177, 94);
+}
+
+.widget-navigation__item {
+  font-size: 18px;
+}
+
+.widget-content {
+  padding: 15px 10px;
+}
+
+.widget-content__header-container {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.widget-content__header-title {
+  font-size: 20px;
+}
+
+.widget-content__list {
+  position: relative;
+  height: 138px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
