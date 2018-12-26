@@ -1,0 +1,42 @@
+.widget-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  min-width: 285px;
+  padding: 5px 10px;
+  border-bottom: 1px solid lightgray;
+  background-color: #fff;
+}
+
+.widget-card:hover {
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+}
+
+.widget-card__description {
+  max-width: 170px;
+}
+
+.widget-card__description-title {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.widget-card__description-address {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: lightslategray;
+}
+
+.widget-card__description-phone {
+  font-size: 12px;
+  color: lightcoral;
+}
+
+.widget-card__images-item {
+  border-radius: 50%;
+}
+
+.widget-card__images-item:first-child {
+  margin-right: 5px;
+}
