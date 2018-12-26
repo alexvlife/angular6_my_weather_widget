@@ -1,0 +1,79 @@
+.weather-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+  height: 190px;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  background-color: lightskyblue;
+}
+
+.weather-content__header-container {
+  text-align: center;
+}
+
+.weather-content__header-title {
+  font-weight: normal; 
+}
+
+.weather-content__middle-container,
+.weather-content__footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.weather-content__middle-container {
+  margin-left: -15px;
+}
+
+.weather-content__middle-icon-container {
+  width: 60px;
+  height: 60px;
+}
+
+.weather-content__middle-info {
+  position: relative;
+  margin-left: 10px;
+  font-size: 60px;
+}
+
+.weather-content__footer-text {
+  position: relative;
+  font-size: 20px;
+}
+
+.weather-content-icon {
+  color: #fff;
+}
+
+.weather-content-icon_waves {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.weather-content-icon_middle {
+  font-size: 60px;
+}
+
+.weather-content-icon-сelsius {
+  font-size: 7px !important;
+}
+
+.weather-content-icon-сelsius_middle {
+  position: absolute;
+  top: 17px;
+  right: -25px;
+  font-size: 15px;
+}
+
+.weather-content-icon-сelsius_footer-text {
+  position: absolute;
+  top: 6px;
+  right: -24px;
+  font-size: 15px;
+}

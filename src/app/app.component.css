@@ -5,3 +5,10 @@ h1 {
 	font-size: 2em;
 	color: #fff;
 }
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  width: 565px;
+  margin: 0 auto;
+}

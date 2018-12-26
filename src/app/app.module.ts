@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { 
+  MatIconModule,
+} from '@angular/material';
+
 import {
   PERFECT_SCROLLBAR_CONFIG,
   PerfectScrollbarConfigInterface,
@@ -10,6 +14,7 @@ import {
 import { AppComponent } from './app.component';
 import { WidgetComponent } from './widget/widget.component';
 import { WidgetCardComponent } from './widget/widget-card/widget-card.component';
+import { WeatherComponent } from './weather/weather.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -20,10 +25,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AppComponent,
     WidgetComponent,
     WidgetCardComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
     PerfectScrollbarModule,
+    MatIconModule,
   ],
   providers: [
     {

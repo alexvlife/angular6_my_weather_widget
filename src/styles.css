@@ -1,3 +1,4 @@
+@import '@angular/material/prebuilt-themes/deepPurple-amber.css';
 @import '~perfect-scrollbar/css/perfect-scrollbar.css';
 
 body {
