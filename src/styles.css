@@ -1,3 +1,5 @@
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
 body {
   font-family: 'Calibri', sans-serif;
   font-size: 100%;
@@ -33,4 +35,19 @@ a {
 
 .line_widget {
   background-color: lightslategrey;
+}
+
+/* Styles for perfectScrollbar */
+
+.ps__rail-y {
+  display: block;
+  opacity: 1;
+  background-color: lightslategray;
+}
+
+.ps__thumb-y,
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: rgb(245, 177, 94);
 }

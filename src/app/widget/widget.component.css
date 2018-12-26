@@ -46,3 +46,7 @@
   overflow: hidden;
   overflow-y: scroll;
 }
+
+.widget-content__item {
+  margin-right: 10px;
+}
