@@ -1,12 +1,12 @@
 <h1>{{pageTitle}}</h1>
 
-<section class="app-container">
+<section *ngIf="hotels && currentHotel" class="app-container">
 
-  <app-widget [hotels]="hotels"></app-widget>
+  <app-widget [hotels]="hotels" [currentHotel]="currentHotel"></app-widget>
 
   <aside class="sidebar-container">
-    <app-weather></app-weather>
-    <app-social></app-social>
+    <app-weather [currentHotel]="currentHotel"></app-weather>
+    <app-social [currentHotel]="currentHotel"></app-social>
   </aside>
 
 </section>

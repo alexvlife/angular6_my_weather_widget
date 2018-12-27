@@ -15,7 +15,8 @@ export class AppComponent {
   
   // data for ui
   public hotels: Hotel[] = [];
-  public pageTitle = 'My Weather Widget';
+  public currentHotel: Hotel;
+  public pageTitle: string = 'My Weather Widget';
 
   // subscription
   private _hotels$: Observable<Hotel[]>;
@@ -42,8 +43,20 @@ export class AppComponent {
       .subscribe((hotels: Hotel[]) => {
         console.log('AppComponent, ngOnInit():');
         console.log('hotels', hotels);
-        this.hotels = hotels;
+        this.initHotels(hotels);
         console.log('this.hotels', this.hotels);
+        this.initCurrentHotel();
       });
+  }
+
+  initHotels(hotels: Hotel[]): void {
+    this.hotels = hotels;
+  }
+
+  initCurrentHotel(): void {
+    if (this.hotels.length < 1) {
+      return;
+    }
+    this.currentHotel = this.hotels[0];
   }
 }

@@ -11,6 +11,7 @@ import { WeatherType } from '../shared/models/weather';
 export class WidgetComponent {
 
   @Input() hotels: Hotel[] = [];
+  @Input() currentHotel: Hotel;
 
   public navigationItems: Array<HotelType | 'ALL'> = [
     'ALL',
@@ -23,24 +24,24 @@ export class WidgetComponent {
   //filter
   public currentHotelType: HotelType | 'ALL' = 'ALL';
 
-  public hotel: Hotel = {
-    id: 1,
-    types: [HotelType.MOUNTAINS, HotelType.TOUR],
-    image: 'hotel1_img1.png',
-    address: 'Hotel place 1, City name, Country name',
-    phone: '1234567890',
-    weatherInfo: {
-      'type': WeatherType.SUNNY,
-      'airTemperature': 35,
-      'waterTemperature': 30,
-      'icon': 'icon'
-    },
-    socialInfo: {
-      title: 'Hotel 1',
-      image: 'hotel1_img2.png',
-      followers: 9888,
-      following: 1976
+  public imagesPath: string = '../../assets/images/';
+  public defaultImageUrl: string = '../../assets/images/no-photo.jpg';
+
+  public hotelImageUrl: string = '';
+
+  ngOnInit(): void {
+    this.initHotelImageUrl();
+  }
+
+  initHotelImageUrl(): void {
+    if (this.currentHotel) {
+      this.hotelImageUrl = this.currentHotel.image ?
+        this.getImagePath(this.currentHotel.image) : this.defaultImageUrl;
     }
+  }
+
+  getImagePath(imageName: string): string {
+    return this.imagesPath + imageName;
   }
 
 }

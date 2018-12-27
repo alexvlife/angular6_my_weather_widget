@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Hotel, HotelType } from '../shared/models/hotel';
-import { WeatherType } from '../shared/models/weather';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Hotel } from '../shared/models/hotel';
 
 @Component({
   selector: 'app-social',
@@ -9,29 +9,26 @@ import { WeatherType } from '../shared/models/weather';
 })
 export class SocialComponent implements OnInit {
 
-  public hotel: Hotel = {
-    id: 1,
-    types: [HotelType.MOUNTAINS, HotelType.TOUR],
-    image: 'hotel1_img1.png',
-    address: 'Hotel place 1, City name, Country name',
-    phone: '1234567890',
-    weatherInfo: {
-      'type': WeatherType.SUNNY,
-      'airTemperature': 35,
-      'waterTemperature': 30,
-      'icon': 'icon'
-    },
-    socialInfo: {
-      title: 'Hotel 1',
-      image: 'hotel1_img2.png',
-      followers: 9888,
-      following: 1976
+  @Input() currentHotel: Hotel;
+
+  public imagesPath: string = '../../assets/images/';
+  public defaultImageUrl: string = '../../assets/images/no-photo.jpg';
+
+  public hotelImageUrl: string = '';
+
+  ngOnInit(): void {
+    this.initHotelImageUrl();
+  }
+
+  initHotelImageUrl(): void {
+    if (this.currentHotel) {
+      this.hotelImageUrl = (this.currentHotel.socialInfo && this.currentHotel.socialInfo.image) ?
+        this.getImagePath(this.currentHotel.socialInfo.image) : this.defaultImageUrl;
     }
   }
 
-  constructor() { }
-
-  ngOnInit() {
+  getImagePath(imageName: string): string {
+    return this.imagesPath + imageName;
   }
 
 }
