@@ -17,6 +17,8 @@
 }
 
 .weather-content__header-title {
+  margin-bottom: 10px;
+  font-size: 18px;
   font-weight: normal; 
 }
 
@@ -44,7 +46,7 @@
 
 .weather-content__footer-text {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .weather-content-icon {
