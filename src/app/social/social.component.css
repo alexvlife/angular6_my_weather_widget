@@ -57,11 +57,15 @@
   text-align: center;
 }
 
+.social-content__footer-text-numbers,
+.social-content__footer-text-description {
+  color: rgb(96, 103, 110);
+}
+
 .social-content__footer-text-numbers {
   font-weight: bold;
 }
 
 .social-content__footer-text-description {
   font-size: 14px;
-  color: gray;
 }

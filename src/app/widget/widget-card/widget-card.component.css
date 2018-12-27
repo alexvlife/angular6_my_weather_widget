@@ -18,6 +18,7 @@
 .widget-card__description-title {
   margin-bottom: 5px;
   font-size: 16px;
+  color: rgb(96, 103, 110);
 }
 
 .widget-card__description-address {

@@ -58,8 +58,17 @@
   text-align: center;
 }
 
+.widget-content__header-title,
+.widget-content__header-description {
+  color: rgb(96, 103, 110);
+}
+
 .widget-content__header-title {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.widget-content__header-description {
+  font-size: 14px;
 }
 
 .widget-content__list {
