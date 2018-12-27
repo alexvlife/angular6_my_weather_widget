@@ -15,7 +15,8 @@
     <ul class="widget-navigation__menu">
       <li
         *ngFor="let item of navigationItems"
-        class="widget-navigation__item">
+        class="widget-navigation__item"
+        [ngClass]="{'widget-navigation__item_active': currentHotelType === item}">
         {{item}}
       </li>
     </ul>

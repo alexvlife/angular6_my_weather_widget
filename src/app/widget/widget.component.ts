@@ -28,6 +28,9 @@ export class WidgetComponent implements OnInit, OnDestroy {
     HotelType.TOUR,
   ];
 
+  //filter
+  public currentHotelType: HotelType | 'ALL' = 'ALL';
+
   public hotel: Hotel = {
     id: 1,
     types: [HotelType.MOUNTAINS, HotelType.TOUR],

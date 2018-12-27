@@ -33,7 +33,20 @@
 }
 
 .widget-navigation__item {
+  opacity: 0.75;
   font-size: 16px;
+}
+
+.widget-navigation__item:hover {
+  opacity: 0.90;
+  cursor: pointer;
+}
+
+.widget-navigation__item_active,
+.widget-navigation__item_active:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+  cursor: default;
 }
 
 .widget-content {
