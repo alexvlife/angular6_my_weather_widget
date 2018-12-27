@@ -1,9 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-import { Observable, Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
-
-import { WidgetService } from '../shared/services/widget.service';
 import { Hotel, HotelType } from '../shared/models/hotel';
 import { WeatherType } from '../shared/models/weather';
 
@@ -12,14 +8,10 @@ import { WeatherType } from '../shared/models/weather';
   templateUrl: './widget.component.html',
   styleUrls: ['./widget.component.css']
 })
-export class WidgetComponent implements OnInit, OnDestroy {
+export class WidgetComponent {
 
-  // subscription
-  private _hotels$: Observable<Hotel[]>;
-  private _ngUnsubscribe: Subject<any> = new Subject();
+  @Input() hotels: Hotel[] = [];
 
-  // data for ui
-  public hotels: Hotel[] = [];
   public navigationItems: Array<HotelType | 'ALL'> = [
     'ALL',
     HotelType.MOUNTAINS,
@@ -49,28 +41,6 @@ export class WidgetComponent implements OnInit, OnDestroy {
       followers: 9888,
       following: 1976
     }
-  }
-
-  constructor(
-    private _widgetService: WidgetService,
-  ) {
-    this._hotels$ = this._widgetService.getHotels();
-  }
-
-  ngOnInit(): void {
-    this._hotels$
-      .pipe(takeUntil(this._ngUnsubscribe))
-      .subscribe((hotels: Hotel[]) => {
-        console.log('WidgetComponent, ngOnInit():');
-        console.log('hotels', hotels);
-        this.hotels = hotels;
-        console.log('this.hotels', this.hotels);
-      });
-  }
-
-  ngOnDestroy(): void {
-    this._ngUnsubscribe.next();
-    this._ngUnsubscribe.complete();
   }
 
 }
