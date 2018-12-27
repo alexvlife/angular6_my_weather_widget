@@ -2,7 +2,7 @@
   width: 330px;
   height: 485px;
   border-radius: 7px;
-  background-color: #fff;
+  background-color: rgb(227, 233, 232);
 }
 
 .widget-banner {
@@ -18,17 +18,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 50px;
   color: #fff;
   background-color: rgb(245, 177, 94);
 }
 
 .widget-navigation__menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 10px;
   font-size: 18px;
 }
 
 .widget-navigation__item {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .widget-content {
@@ -47,10 +52,19 @@
 .widget-content__list {
   position: relative;
   height: 138px;
+  border-radius: 3px;
   overflow: hidden;
   overflow-y: scroll;
+  background-color: #fff;
 }
 
-.widget-content__item {
-  margin-right: 10px;
+.widget-content__item-line {
+  width: 290px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+
+.widget-content__item:first-child .widget-content__item-line {
+  display: none;
 }

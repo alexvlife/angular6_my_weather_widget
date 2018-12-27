@@ -52,6 +52,7 @@ a {
 
 .ps__rail-y {
   display: block;
+  right: -2px;
   opacity: 1;
   background-color: lightslategray;
 }

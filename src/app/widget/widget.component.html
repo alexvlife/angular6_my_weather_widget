@@ -32,6 +32,7 @@
     <ul class="widget-content__list" [perfectScrollbar]>
       <li *ngFor="let hotel of hotels"
         class="widget-content__item">
+        <div class="widget-content__item-line"></div>
         <app-widget-card [hotel]="hotel"></app-widget-card>
       </li>
     </ul>
