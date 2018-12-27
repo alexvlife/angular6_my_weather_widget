@@ -12,6 +12,7 @@ import {
   PerfectScrollbarModule,
 } from 'ngx-perfect-scrollbar';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WidgetComponent } from './widget/widget.component';
 import { WidgetCardComponent } from './widget/widget-card/widget-card.component';
@@ -35,6 +36,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     HttpClientModule,
     PerfectScrollbarModule,
     MatIconModule,
+    AppRoutingModule,
   ],
   providers: [
     {
