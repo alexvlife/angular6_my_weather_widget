@@ -23,6 +23,10 @@
   background-color: rgb(245, 177, 94);
 }
 
+.widget-navigation__menu {
+  font-size: 18px;
+}
+
 .widget-navigation__item {
   font-size: 18px;
 }
