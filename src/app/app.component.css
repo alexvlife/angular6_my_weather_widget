@@ -12,3 +12,9 @@ h1 {
   width: 565px;
   margin: 0 auto;
 }
+
+.sidebar-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

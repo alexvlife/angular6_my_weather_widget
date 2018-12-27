@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { WidgetComponent } from './widget/widget.component';
 import { WidgetCardComponent } from './widget/widget-card/widget-card.component';
 import { WeatherComponent } from './weather/weather.component';
+import { SocialComponent } from './social/social.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -26,6 +27,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     WidgetComponent,
     WidgetCardComponent,
     WeatherComponent,
+    SocialComponent,
   ],
   imports: [
     BrowserModule,

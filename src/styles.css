@@ -38,6 +38,16 @@ a {
   background-color: lightslategrey;
 }
 
+.vertical-line {
+  width: 2px;
+  height: 40px;
+  background-color: gray;
+}
+
+.vertical-line-margin-rl {
+  margin: 0 15px;
+}
+
 /* Styles for perfectScrollbar */
 
 .ps__rail-y {

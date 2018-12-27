@@ -1,0 +1,39 @@
+<section class="social-content">
+
+  <article class="social-content__main-block">
+
+    <header class="social-content__header-container">
+      <h2 class="social-content__header-title">Наименование отеля</h2>
+      <div class="line"></div>
+    </header>
+
+    <div class="social-content__image-container">
+      <img
+        [src]="hotel.socialInfo.image || '../../../assets/images/no-photo.jpg'"
+        alt="Photo 2"
+        onerror="this.src = '../../../assets/images/no-photo.jpg'"
+        [title]="hotel.socialInfo.title"
+        width="100"
+        height="100"
+        class="social-content__image">
+    </div>
+
+  </article>
+
+  <footer class="social-content__footer-container">
+
+    <div class="social-content__footer-block">
+      <p class="social-content__footer-text-numbers">1234</p>
+      <p class="social-content__footer-text-description">Followers</p>
+    </div>
+
+    <div class="vertical-line vertical-line-margin-rl"></div>
+
+    <div class="social-content__footer-block">
+      <p class="social-content__footer-text-numbers">432</p>
+      <p class="social-content__footer-text-description">Following</p>
+    </div>
+
+  </footer>
+
+</section>
