@@ -29,7 +29,8 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.subscribeOnHotelsData();
+    this.subscribeToHotelsData();
+    this.subscribeToCurrentHotelChanged();
   }
 
   ngOnDestroy(): void {
@@ -37,14 +38,11 @@ export class AppComponent {
     this._ngUnsubscribe.complete();
   }
 
-  subscribeOnHotelsData(): void {
+  subscribeToHotelsData(): void {
     this._hotels$
       .pipe(takeUntil(this._ngUnsubscribe))
       .subscribe((hotels: Hotel[]) => {
-        console.log('AppComponent, ngOnInit():');
-        console.log('hotels', hotels);
         this.initHotels(hotels);
-        console.log('this.hotels', this.hotels);
         this.initCurrentHotel();
       });
   }
@@ -57,6 +55,14 @@ export class AppComponent {
     if (this.hotels.length < 1) {
       return;
     }
-    this.currentHotel = this.hotels[0];
+    this._widgetService.currentHotel = this.hotels[0];
+  }
+
+  subscribeToCurrentHotelChanged(): void {
+    this._widgetService.currentHotelChanged
+      .pipe(takeUntil(this._ngUnsubscribe))
+      .subscribe(() => {
+        this.currentHotel = this._widgetService.currentHotel;
+      });
   }
 }
