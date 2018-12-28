@@ -14,7 +14,7 @@
 
   <aside class="widget-card__images">
     <img
-      [src]="hotelImageData.url1"
+      [src]="hotel.imageUrl"
       alt="Photo 1"
       onerror="this.src = '../../../assets/images/no-photo.jpg'"
       [title]="hotel.socialInfo.title"
@@ -22,7 +22,7 @@
       height="50"
       class="widget-card__images-item">
     <img
-      [src]="hotelImageData.url2"
+      [src]="hotel.socialInfo.imageUrl"
       alt="Photo 2"
       onerror="this.src = '../../../assets/images/no-photo.jpg'"
       [title]="hotel.socialInfo.title"
