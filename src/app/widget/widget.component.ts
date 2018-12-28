@@ -31,6 +31,7 @@ export class WidgetComponent {
 
   onNavigationItemClick(hotelType: HotelType | 'ALL'): void {
     this.changeCurrentHotelType(hotelType);
+    this.changeCurrentHotel(this.defineCurrentHotel(hotelType));
   }
 
   onWidgetCardClick(hotel: Hotel): void {
@@ -45,5 +46,13 @@ export class WidgetComponent {
     this._widgetService.currentHotel = hotel;
   }
 
+  defineCurrentHotel(hotelType: HotelType | 'ALL'): Hotel {
+    if (hotelType === 'ALL') {
+      return this.hotels[0];
+    }
+
+    const currentTypeHotels: Hotel[] = this.hotels.filter((hotel: Hotel) => hotel.types.includes(hotelType));
+    return currentTypeHotels[0];
+  }
 
 }
