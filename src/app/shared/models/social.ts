@@ -1,7 +1,7 @@
 export class Social {
   constructor(
     public title: string,
-    public image: string,
+    public imageUrl: string,
     public followers: number,
     public following: number,
   ) {}

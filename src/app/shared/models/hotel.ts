@@ -5,7 +5,7 @@ export class Hotel {
   constructor(
     public id: number,
     public types: HotelType[],
-    public image: string,
+    public imageUrl: string,
     public address: string,
     public phone: string,
     public weatherInfo: Weather,
