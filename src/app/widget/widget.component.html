@@ -18,7 +18,7 @@
         class="widget-navigation__item"
         [ngClass]="{'widget-navigation__item_active': currentHotelType === item}"
         (click)="onNavigationItemClick(item)">
-        {{item}}
+        {{item | uppercaseFirstLetter}}
       </li>
     </ul>
   </nav>
@@ -28,7 +28,7 @@
     <header class="widget-content__header-container">
       <h2 class="widget-content__header-title">Hotels and places for your rest</h2>
       <div class="line line_widget"></div>
-      <p class="widget-content__header-description">Filtered by: "{{currentHotelType}}"</p>
+      <p class="widget-content__header-description">Filtered by: "{{currentHotelType | uppercaseFirstLetter}}"</p>
     </header>
 
     <ul class="widget-content__list" [perfectScrollbar]>

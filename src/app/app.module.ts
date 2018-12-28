@@ -19,6 +19,7 @@ import { WidgetCardComponent } from './widget/widget-card/widget-card.component'
 import { WeatherComponent } from './weather/weather.component';
 import { SocialComponent } from './social/social.component';
 import { HotelsFilterPipe } from './shared/pipes/hotels-filter.pipe';
+import { UppercaseFirstLetterPipe } from './shared/pipes/uppercase-first-letter.pipe';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -32,6 +33,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     WeatherComponent,
     SocialComponent,
     HotelsFilterPipe,
+    UppercaseFirstLetterPipe,
   ],
   imports: [
     BrowserModule,
