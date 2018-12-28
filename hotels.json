@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "types": ["MOUNTAINS", "TOUR"],
+    "types": ["MOUNTAINS"],
     "imageUrl": "./assets/images/hotel1_img1.png",
     "address": "Hotel place 1, City name, Country name",
     "phone": "1234567890",
@@ -58,7 +58,7 @@
   },
   {
     "id": 4,
-    "types": ["SEA", "FISHING"],
+    "types": ["SEA"],
     "imageUrl": "./assets/images/hotel4_img1.png",
     "address": "Hotel place 4, City name, Country name",
     "phone": "4567890123",
@@ -134,7 +134,7 @@
   },
   {
     "id": 8,
-    "types": ["FISHING"],
+    "types": ["FISHING", "TOUR"],
     "imageUrl": "./assets/images/hotel8_img1.png",
     "address": "Hotel place 8, City name, Country name",
     "phone": "8901234567",

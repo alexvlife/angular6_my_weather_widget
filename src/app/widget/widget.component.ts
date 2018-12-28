@@ -16,9 +16,9 @@ export class WidgetComponent {
 
   public navigationItems: Array<HotelType | 'ALL'> = [
     'ALL',
-    HotelType.MOUNTAINS,
     HotelType.SEA,
     HotelType.FISHING,
+    HotelType.MOUNTAINS,
     HotelType.TOUR,
   ];
 
@@ -29,12 +29,21 @@ export class WidgetComponent {
     private _widgetService: WidgetService,
   ) {}
 
+  onNavigationItemClick(hotelType: HotelType | 'ALL'): void {
+    this.changeCurrentHotelType(hotelType);
+  }
+
   onWidgetCardClick(hotel: Hotel): void {
     this.changeCurrentHotel(hotel);
+  }
+
+  changeCurrentHotelType(hotelType: HotelType | 'ALL'): void {
+    this.currentHotelType = hotelType;
   }
 
   changeCurrentHotel(hotel: Hotel): void {
     this._widgetService.currentHotel = hotel;
   }
+
 
 }

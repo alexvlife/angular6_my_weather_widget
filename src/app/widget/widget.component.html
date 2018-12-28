@@ -16,7 +16,8 @@
       <li
         *ngFor="let item of navigationItems"
         class="widget-navigation__item"
-        [ngClass]="{'widget-navigation__item_active': currentHotelType === item}">
+        [ngClass]="{'widget-navigation__item_active': currentHotelType === item}"
+        (click)="onNavigationItemClick(item)">
         {{item}}
       </li>
     </ul>
@@ -31,7 +32,7 @@
     </header>
 
     <ul class="widget-content__list" [perfectScrollbar]>
-      <li *ngFor="let hotel of hotels"
+      <li *ngFor="let hotel of hotels | hotelsFilter:currentHotelType"
         class="widget-content__item">
         <div class="widget-content__item-line"></div>
         <app-widget-card [hotel]="hotel" (click)="onWidgetCardClick(hotel)"></app-widget-card>
