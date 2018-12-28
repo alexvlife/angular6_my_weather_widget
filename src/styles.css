@@ -51,15 +51,19 @@ a {
 /* Styles for perfectScrollbar */
 
 .ps__rail-y {
-  display: block;
-  right: -2px;
-  opacity: 1;
-  background-color: lightslategray;
+  display: block !important;
+  width: 6px !important;
+  right: -2px !important;
+  opacity: 1 !important;
+  border-radius: 3px !important;
+  background-color: rgb(255, 231, 201) !important;
 }
 
 .ps__thumb-y,
 .ps__rail-y:hover > .ps__thumb-y,
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
-  background-color: rgb(245, 177, 94);
+  width: 6px !important;
+  right: 0 !important;
+  background-color: rgb(245, 177, 94) !important;
 }

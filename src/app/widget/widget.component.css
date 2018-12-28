@@ -75,8 +75,6 @@
   position: relative;
   height: 138px;
   border-radius: 3px;
-  overflow: hidden;
-  overflow-y: scroll;
   background-color: #fff;
 }
 

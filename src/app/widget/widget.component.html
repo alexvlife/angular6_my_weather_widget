@@ -31,12 +31,14 @@
       <p class="widget-content__header-description">Filtered by: "{{currentHotelType | uppercaseFirstLetter}}"</p>
     </header>
 
-    <ul class="widget-content__list" [perfectScrollbar]>
-      <li *ngFor="let hotel of hotels | hotelsFilter:currentHotelType"
-        class="widget-content__item">
-        <div class="widget-content__item-line"></div>
-        <app-widget-card [hotel]="hotel" (click)="onWidgetCardClick(hotel)"></app-widget-card>
-      </li>
+    <ul class="widget-content__list">
+      <perfect-scrollbar>
+        <li *ngFor="let hotel of hotels | hotelsFilter:currentHotelType"
+          class="widget-content__item">
+          <div class="widget-content__item-line"></div>
+          <app-widget-card [hotel]="hotel" (click)="onWidgetCardClick(hotel)"></app-widget-card>
+        </li>
+      </perfect-scrollbar>
     </ul>
 
   </section>
