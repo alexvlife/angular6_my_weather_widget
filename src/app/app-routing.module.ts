@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'hotels'
+    redirectTo: '/hotels'
   }
 ];
 
